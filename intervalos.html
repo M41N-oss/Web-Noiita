@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📍 Intervalos</h1>
+        <p>Cómo representar conjuntos de números en la recta real</p>
+    </header>
+
+    <main>
+
+        <section class="tema">
+            <h2>📚 ¿Qué es un intervalo?</h2>
+
+            <p>
+                Un intervalo es una forma de decir: <strong>«todos los números
+                que están entre este número y este otro»</strong>.
+            </p>
+
+            <p>
+                Por ejemplo, entre 2 y 5 están 3, 4 y también números con
+                decimales, como 2,5 o 4,99. En los ejemplos, usaremos
+                <strong>x</strong> para representar cualquiera de esos números.
+            </p>
+
+            <div class="ejemplo">
+                Por ejemplo, si <strong>x = 3</strong>, el número está entre
+                2 y 5. Si <strong>x = 6</strong>, no está entre ellos.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🔑 La clave: ¿se incluyen los extremos?</h2>
+
+            <p>
+                Los <strong>extremos</strong> son los dos números que marcan
+                el principio y el final del intervalo. Para saber si se cuentan,
+                fíjate en los símbolos que los rodean:
+            </p>
+
+            <div class="ejemplo">
+                <strong>Paréntesis ( )</strong> → el extremo se queda fuera.<br>
+                <strong>Corchete [ ]</strong> → el extremo sí cuenta.
+            </div>
+
+            <div class="importante">
+                💡 Mira cada extremo por separado: el símbolo de la izquierda
+                te dice qué pasa con el número de la izquierda; el de la derecha,
+                con el número de la derecha.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🔓 Abierto: no contamos los extremos</h2>
+
+            <p>
+                Si hay paréntesis en los dos lados, los dos extremos quedan fuera.
+            </p>
+
+            <div class="formula">
+                (2, 5)
+            </div>
+
+            <div class="formula">
+                2 &lt; x &lt; 5
+            </div>
+
+            <div class="ejemplo">
+                Esto significa que <strong>x es mayor que 2 y menor que 5</strong>.
+                El 2 y el 5 no cuentan, pero sí cuentan números como 3 y 2,5.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🔒 Cerrado: sí contamos los extremos</h2>
+
+            <p>
+                Si hay corchetes en los dos lados, los dos extremos sí cuentan.
+            </p>
+
+            <div class="formula">
+                [2, 5]
+            </div>
+
+            <div class="formula">
+                2 ≤ x ≤ 5
+            </div>
+
+            <div class="ejemplo">
+                Esto significa que <strong>x puede ser 2, puede ser 5 o puede
+                estar entre ellos</strong>. El símbolo ≤ quiere decir «menor
+                o igual», así que el extremo también se incluye.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🔓🔒 Un extremo sí y el otro no</h2>
+
+            <div class="ejemplo">
+                <strong>[2, 5)</strong><br>
+                El 2 sí cuenta (corchete), pero el 5 no (paréntesis).<br>
+                Se lee: <strong>2 ≤ x &lt; 5</strong>.
+            </div>
+
+            <div class="ejemplo">
+                (2, 5]
+                <br>
+                El 2 no cuenta (paréntesis), pero el 5 sí (corchete).<br>
+                Se lee: <strong>2 &lt; x ≤ 5</strong>.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>📏 Representación en la recta real</h2>
+
+            <p>
+                En la recta, un <strong>círculo vacío ○</strong> significa
+                «este extremo no cuenta» y un <strong>círculo lleno ●</strong>
+                significa «este extremo sí cuenta».
+            </p>
+
+            <div class="ejemplo">
+                <strong>(2, 5)</strong> → 2 ○────○ 5
+                <br><br>
+                Los dos círculos están vacíos: ni 2 ni 5 cuentan.
+                Los números entre ellos sí cuentan.
+            </div>
+
+            <div class="importante">
+                🧠 <strong>Truco:</strong> paréntesis con círculo vacío;
+                corchete con círculo lleno.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🪜 Cómo leerlo sin liarse</h2>
+
+            <div class="ejemplo">
+                Vamos a leer <strong>[1, 4)</strong> paso a paso:
+                <br><br>
+                <strong>1.</strong> Los números del intervalo van del 1 al 4.<br>
+                <strong>2.</strong> El 1 tiene corchete, así que sí cuenta.<br>
+                <strong>3.</strong> El 4 tiene paréntesis, así que no cuenta.
+                <br><br>
+                Por eso se escribe <strong>1 ≤ x &lt; 4</strong>.
+            </div>
+
+            <div class="importante">
+                ⚠️ Un intervalo abierto no está vacío: contiene muchos números,
+                como 2,5, 3 y 4,9. Lo único que no incluye son sus extremos.
+            </div>
+        </section>
+
+        <section class="tema">
+            <h2>✏️ Practica</h2>
+            <p>Intenta responder antes de abrir la solución.</p>
+
+            <div class="ejemplo">
+                <strong>1.</strong> En [1, 4), ¿cuenta el 1? ¿Y el 4?
+                <details>
+                    <summary>Ver solución</summary>
+                    <p>El 1 sí cuenta porque tiene corchete. El 4 no cuenta porque
+                        tiene paréntesis.</p>
+                </details>
+            </div>
+
+            <div class="ejemplo">
+                <strong>2.</strong> ¿Qué quiere decir (−2, 3]? ¿El 3 cuenta?
+                <details>
+                    <summary>Ver solución</summary>
+                    <p>Quiere decir −2 &lt; x ≤ 3. El −2 no cuenta porque tiene
+                        paréntesis; el 3 sí cuenta porque tiene corchete.</p>
+                </details>
+            </div>
+        </section>
+
+
+        <p class="mensaje-noa">
+            Noa, te quieroo 💕  💕
+        </p>
+
+        <button onclick="window.location.href='matematicas.html'">
+            ← Volver a Matemáticas
+        </button>
+
+    </main>
+
+</body>
+</html>

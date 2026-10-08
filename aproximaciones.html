@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aproximaciones y errores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎯 Aproximaciones y errores</h1>
+        <p>Cómo aproximar números y entender el error</p>
+    </header>
+
+    <main>
+
+        <section class="tema">
+            <h2>📚 ¿Qué es una aproximación?</h2>
+
+            <p>
+                A veces trabajamos con números que tienen muchos decimales
+                y es más cómodo utilizar un valor aproximado.
+            </p>
+
+            <p>
+                Una aproximación es un número que está
+                <strong>muy cerca del valor exacto</strong>, pero no tiene
+                por qué ser exactamente igual.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong><br><br>
+
+                El número 3,141592... puede aproximarse a:
+                <br><br>
+
+                <strong>3,14</strong>
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>⬇️ Aproximación por defecto</h2>
+
+            <p>
+                Una aproximación es <strong>por defecto</strong> cuando
+                utilizamos un número que es <strong>menor</strong> que el
+                número exacto.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong><br><br>
+
+                Queremos aproximar 3,78 a las décimas.
+                <br><br>
+
+                Una aproximación por defecto sería:
+                <br><br>
+
+                <strong>3,7</strong>
+                <br><br>
+
+                Porque 3,7 es menor que 3,78.
+            </div>
+
+            <div class="importante">
+                🧠 <strong>Por defecto = nos quedamos por debajo.</strong>
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>⬆️ Aproximación por exceso</h2>
+
+            <p>
+                Una aproximación es <strong>por exceso</strong> cuando
+                utilizamos un número que es <strong>mayor</strong> que el
+                número exacto.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong><br><br>
+
+                Queremos aproximar 3,78 a las décimas.
+                <br><br>
+
+                Una aproximación por exceso sería:
+                <br><br>
+
+                <strong>3,8</strong>
+                <br><br>
+
+                Porque 3,8 es mayor que 3,78.
+            </div>
+
+            <div class="importante">
+                🧠 <strong>Por exceso = nos pasamos por arriba.</strong>
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🔄 Aproximación por redondeo</h2>
+
+            <p>
+                Para redondear un número debemos mirar la cifra que está
+                justo después de la posición a la que queremos aproximar.
+            </p>
+
+            <div class="ejemplo">
+                <strong>Regla:</strong><br><br>
+
+                Si la cifra siguiente es <strong>0, 1, 2, 3 o 4</strong>,
+                mantenemos la cifra.
+                <br><br>
+
+                Si es <strong>5, 6, 7, 8 o 9</strong>, aumentamos la cifra
+                anterior en una unidad.
+            </div>
+
+            <div class="ejemplo">
+                <strong>Ejemplos:</strong><br><br>
+
+                3,74 → a las décimas → <strong>3,7</strong>
+                <br><br>
+
+                3,78 → a las décimas → <strong>3,8</strong>
+            </div>
+
+            <div class="importante">
+                💡 Mira siempre la cifra que está
+                <strong>justo después</strong> de la que quieres conservar.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>📏 ¿Qué es el error?</h2>
+
+            <p>
+                Cuando sustituimos un número exacto por una aproximación,
+                aparece una diferencia entre ambos valores.
+                Esa diferencia se llama <strong>error</strong>.
+            </p>
+
+            <div class="formula">
+                Error = valor exacto − valor aproximado
+            </div>
+
+            <div class="ejemplo">
+                <strong>Ejemplo:</strong><br><br>
+
+                Valor exacto: 3,78
+                <br>
+                Valor aproximado: 3,8
+                <br><br>
+
+                Error con signo = valor exacto − valor aproximado
+                <br>
+                Error con signo = 3,78 − 3,8 = <strong>−0,02</strong>
+            </div>
+
+            <p>
+                El signo negativo indica que la aproximación (3,8) quedó por
+                encima del valor exacto (3,78). Si solo queremos medir la
+                distancia entre ambos, usamos el <strong>error absoluto</strong>,
+                que siempre es positivo o cero.
+            </p>
+
+            <div class="formula">
+                Error absoluto = |valor exacto − valor aproximado|
+            </div>
+
+            <div class="ejemplo">
+                En este ejemplo, el error absoluto es
+                |3,78 − 3,8| = <strong>0,02</strong>.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>🧠 ¿Cómo reconocer cada una?</h2>
+
+            <div class="ejemplo">
+                <strong>Por defecto:</strong> la aproximación queda por debajo.
+                <br><br>
+
+                <strong>Por exceso:</strong> la aproximación queda por encima.
+                <br><br>
+
+                <strong>Por redondeo:</strong> miramos la cifra siguiente
+                y decidimos si mantenemos o aumentamos.
+            </div>
+        </section>
+
+
+        <section class="tema">
+            <h2>⚠️ Errores típicos</h2>
+
+            <div class="importante">
+                ❌ Confundir defecto con exceso.
+                <br><br>
+                ✅ Por defecto → abajo.
+                <br>
+                ✅ Por exceso → arriba.
+            </div>
+
+            <div class="importante">
+                ❌ Redondear siempre hacia arriba.
+                <br><br>
+                ✅ Hay que mirar la cifra siguiente:
+                si es 0–4 se mantiene; si es 5–9 aumenta.
+            </div>
+        </section>
+
+        <section class="tema">
+            <h2>✏️ Practica</h2>
+            <p>Intenta responder antes de abrir cada solución.</p>
+
+            <div class="ejemplo">
+                <strong>1.</strong> Redondea 5,36 a las décimas.
+                <details>
+                    <summary>Ver solución</summary>
+                    <p>La cifra de las décimas es 3 y la siguiente es 6. Como 6 es
+                        mayor o igual que 5, aumentamos el 3: el resultado es 5,4.</p>
+                </details>
+            </div>
+
+            <div class="ejemplo">
+                <strong>2.</strong> El valor exacto es 8,2 y usamos 8 como aproximación.
+                ¿Cuál es el error con signo y cuál es el error absoluto?
+                <details>
+                    <summary>Ver solución</summary>
+                    <p>Error con signo: 8,2 − 8 = 0,2. Error absoluto: |0,2| = 0,2.</p>
+                </details>
+            </div>
+        </section>
+
+
+        <p class="mensaje-noa">
+            Noa, te quieroo 💕  💕
+        </p>
+
+        <button onclick="window.location.href='matematicas.html'">
+            ← Volver a Matemáticas
+        </button>
+
+    </main>
+
+</body>
+</html>

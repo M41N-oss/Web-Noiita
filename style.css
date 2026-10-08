@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #4a2633;
+    min-height: 100vh;
+}
+
+/* CABECERA */
+
+header {
+    text-align: center;
+    padding: 45px 20px 35px;
+    background: #ffd6e7;
+    border-bottom: 3px solid #ffb6d2;
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #c74778;
+}
+
+header p {
+    color: #74485a;
+    font-size: 17px;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #c74778;
+}
+
+/* TARJETAS */
+
+.tema {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 20px;
+    border: 2px solid #ffc6dc;
+    box-shadow: 0 5px 15px rgba(190, 70, 120, 0.10);
+}
+
+.tema h2 {
+    text-align: left;
+    margin-bottom: 18px;
+    color: #d34f83;
+}
+
+.tema p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* FÓRMULAS */
+
+.formula {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #c74778;
+    background: #fff0f6;
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+/* EJEMPLOS */
+
+.ejemplo {
+    background: #fff5f9;
+    padding: 18px;
+    border-radius: 15px;
+    border-left: 5px solid #ff9fc4;
+    margin: 18px 0;
+    line-height: 1.6;
+}
+
+/* IMPORTANTE */
+
+.importante {
+    background: #ffe3ef;
+    padding: 16px;
+    border-radius: 15px;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+/* BOTONES */
+
+.materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.materias.solo-materia {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.materias button {
+    padding: 28px 15px;
+    border: 2px solid #ffc6dc;
+    border-radius: 20px;
+    background: white;
+    color: #633447;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 5px 15px rgba(190, 70, 120, 0.10);
+}
+
+.materias button span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #74485a;
+}
+
+.materias button:hover {
+    transform: translateY(-4px);
+    background: #fff0f6;
+}
+
+.aviso-materias {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+details {
+    margin-top: 12px;
+}
+
+details summary {
+    color: #c74778;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin-top: 10px;
+}
+
+/* BOTÓN VOLVER */
+
+main > button {
+    display: block;
+    margin: 30px auto;
+    padding: 13px 22px;
+    border: 2px solid #ffb6d2;
+    border-radius: 15px;
+    background: white;
+    color: #c74778;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* MENSAJE PARA NOA */
+
+.mensaje-noa {
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #c74778;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 18px 28px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .materias {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .materias button {
+        padding: 23px 15px;
+        font-size: 18px;
+    }
+
+    .tema {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .tema h2 {
+        font-size: 21px;
+    }
+
+    .formula {
+        font-size: 23px;
+    }
+
+    .mensaje-noa {
+        font-size: 12px;
+    }
+}
